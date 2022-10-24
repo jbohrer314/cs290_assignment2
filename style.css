@@ -1,0 +1,172 @@
+/*
+ * You should write your CSS in this file.  Don't forget to add your name and
+ * @oregonstate.edu email address below.
+ *
+ * name: Jackson Bohrer
+ * email: bohrerja@oregonstate.edu
+ */
+
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Styling heading and top of webpage */
+.site-title {
+    background-color: #000000;
+    box-sizing: content-box;
+    width: 100%;
+    height: 150px;
+    margin: 0px;
+    position: relative;
+}
+
+.site-title a {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 500;
+    font-size: 75px;
+    color: #fdfefd;
+    text-decoration: none;
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+} 
+
+header {
+    display: flex;
+}
+
+/* Styling filter box */
+.filter-container {
+    box-sizing: content-box;
+    height: 100%;
+    width: 200px;
+    background-color: #efefef;
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin: 10px;
+    flex-shrink: 0;
+}
+
+.filter-container > * {
+    margin: 15px 0px;
+    display: flex;
+    gap: 10px;
+}
+
+.filter-input-element, .filter-fieldset {
+    flex-grow: 1;
+}
+
+.filter-input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#filter-update-button {
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    background-color: #000000;
+    color: #e6e7ea;
+    display: block;
+    border-radius: 4px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border-width: 1px;
+}
+
+#filter-update-button:hover {
+    background-color: #f3d0b5;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* Styling for posts section */
+.content {
+    display: flex;
+}
+
+#posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-contents {
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    border-width: 1.5px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column nowrap;
+}
+
+.post-image-container > img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.post-image-container {
+    width: 300px;
+    max-height: 250px;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-info-container {
+    max-width: 300px;
+    padding: 10px;
+    flex: 1 1 0;
+}
+
+.post-title {
+    color: #f67821;
+    text-decoration: none;
+}
+
+.post-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.post-price {
+    background-color: #f1f1f1;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #b6b6b6;
+    font-size: smaller;
+    padding: 1px;
+}
+
+.post-info-container > * {
+    margin: 0px 2px;
+}
+
+/* Styling for sell button */
+#sell-something-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-style: none;
+    color: #ffffff;
+    background-color: #f67811;
+    font-size: 30px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    box-shadow: 5px 5px 25px -8px #000000;
+}
+
+#sell-something-button:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+
